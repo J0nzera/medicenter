@@ -16,7 +16,7 @@ header {
 .container {
 	width: 990px;
 	display: flex;
-	justify-content: space-between; /*logo: esquerda - menu: direita*/
+	justify-content: space-between;
 }
 
 .logo {
@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav a {
-	display: block; /*permiti alterar o 'tamanho' dos link*/
+	display: block;
 	padding: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -69,7 +69,7 @@ nav a:hover {
 }
 
 .banner_headline {
-	flex: 1; /*tamanho flexivel*/
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -327,6 +327,10 @@ footer .widget_title_text {
 	margin-top: 30px;
 }
 
+.footer_copy a {
+	color: #39aae1;
+}
+
 .exe3 {
 	color: #5c5c5c;
 	font-size: 14px;
@@ -360,4 +364,84 @@ footer .widget_title_text {
 
 .text_post2 {
 	color: #5c5c5c;
+}
+
+.menuMobile {
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+}
+
+.mm_line {
+	height: 2px;
+	background-color: #39aae1;
+}
+
+@media (max-width: 830px) {
+
+	.banner_headline {
+		padding: 20px;
+	}
+
+	.banner_headline h1 {
+		font-size: 60px;
+	}
+
+	.banner_headline h2 {
+		font-size: 17px;
+	}
+
+	.banner_options {
+		height: auto;
+		flex-direction: column;
+	}
+
+	section .container {
+		flex-direction: column;
+	}
+
+	#geral section,
+	#geral aside {
+		padding: 20px;
+	}
+
+	.footer_menu {
+		flex-direction: column;
+	}
+
+	.footer_area {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.footer_copy {
+		padding-left: 20px;
+	}
+
+	nav ul {
+		flex-direction: column;
+		display: none;
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		background-color: #FFF;
+	}
+
+	header {
+		height: auto;
+	}
+
+	.logo {
+		padding-left: 20px;
+	}
+
+	.menuMobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
 }
