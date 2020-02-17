@@ -6,3 +6,6 @@ Projeto realizado em aula para colocar em pratica os conhecimentos de:
 <li>Flexbox</li>
 <li>Responsividade</li>
 </ul>
+
+
+GitHub Pages: https://J0nzera.github.io/medicenter/
